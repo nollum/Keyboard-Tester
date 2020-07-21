@@ -172,12 +172,6 @@ class Application:
             pygame.draw.rect(screen, (0,0,0), self.key_rects[key][0], 2)
             if self.key_rects[key][1] == True:
                 pygame.draw.rect(screen, (255,255,255), [self.key_rects[key][0][0] + 2, self.key_rects[key][0][1]+2, self.key_rects[key][0][2]-3, self.key_rects[key][0][3]-3])
-        #x = 0
-        #for i in range(22):
-            #pygame.draw.rect(screen, (0,0,0), [32+x,VERT_START,35,35], 2)
-            #pygame.draw.rect(screen, (255,255,255), [34+x,302,32,32])
-            #x += 38
-
 
     def update(self, screen):
         pygame.display.flip()
